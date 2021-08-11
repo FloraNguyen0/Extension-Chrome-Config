@@ -1,0 +1,36 @@
+{
+  "name": "Expresso",
+  "description": "Build an Extension!",
+  "version": "1.0",
+  "manifest_version": 2,
+  "background": {
+    "scripts": [
+      "background.js"
+    ],
+    "persistent": false
+  },
+
+  "permissions": [
+    "storage",
+    "tabs",
+    "activeTab",
+    "contextMenus",
+    "https://writing-extension.herokuapp.com/",
+    "declarativeContent"
+  ],
+  "page_action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "/images/my_image_16.png",
+      "32": "/images/my_image_32.png",
+      "48": "/images/my_image_48.png",
+      "128": "/images/my_image_128.png"
+    }
+  },
+  "icons": {
+    "16": "/images/my_image_16.png",
+    "32": "/images/my_image_32.png",
+    "48": "/images/my_image_48.png",
+    "128": "/images/my_image_128.png"
+  }
+}
